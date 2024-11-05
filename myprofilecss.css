@@ -1,0 +1,37 @@
+body{
+    background-color: black;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+}
+h1{
+    
+    font-size: x-large;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: antiquewhite ;
+}
+.form-group, .connected-accounts, .subscription
+{
+    padding: 5%;
+    font-size: large;
+    color: antiquewhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+img{
+    height: 75px;
+    width: 200px;
+    border: none;
+    border-color: black;
+    padding:0%;
+}
+#connect-discord-btn {
+    border: none;        /* Removes any default button border */
+    padding: 0;          /* Removes any default padding */
+    background: none;     /* Removes button background */
+}
+
+#connect-discord-btn img {
+    border: none;        /* Removes any border around the image */
+    outline: none;       /* Removes outline around the image */
+    box-shadow: none;    /* Removes any box shadow if present */
+}
