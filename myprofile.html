@@ -1,31 +1,42 @@
-<html>
-    <head>
-      <link rel="stylesheet" href="myprofilecss.css">
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="myprofilecss.css">
+</head>
 <body>
-    <h1>ACCOUNT</h1>
-    <hr>
-    <div class="form-group">
-<label for="email"><h3>EMAIL:</h3></label>
-<input type="email" id="email" name="email" value="ayeshabwc@gmail.com" disabled>
+    <div class="content">
+        <h1>My Profile</h1>
+        <div class="profile-container">
+            <!-- Profile Picture Section -->
+            <div class="profile-picture">
+                <img src="pfp.jpg" alt="Profile Picture">
+            </div>
+        <form class="profile-form">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Username" disabled value="User@111">
+    
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email" value="user@gmail.com">
+    
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password">
+    
+            <label for="gender">Gender</label>
+            <select id="gender">
+                <option value="female" selected>Female</option>
+                <option value="male">Male</option>
+                <option value="other">Other</option>
+            </select>
+    
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" placeholder="dd-mm-yyyy">
+    
+            <button type="submit">Save</button>
+        </form>
     </div>
-
-    <div class="form-group">
-<label for="password"><h3>PASSWORD:</h3></label>
- <input type="password" id="password" name="password">
-        <button id="change-password-btn">Change Password</button>
-    </div>
-
-    <hr>
-    <div class="connected-accounts">
-
- <h3>CONNECTED<br>ACCOUNTS</h3>
-        <p>DISCORD:</p><br>
-        <button id="connect-discord-btn"><img src="discord.png"></button>
-
-    </div>
-
-</body>
-<script src="myprofilejs.js"></script>
+    
 </body>
 </html>

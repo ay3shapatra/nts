@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Library Section with Output</title>
+    <link rel="stylesheet" href="library_css.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="library-section">
+            <h2>Your Library</h2>
+            <div class="library-menu">
+                <button class="menu-button">Playlists</button>
+                <button class="menu-button" onclick="showArtists()">Artists</button>
+                <button class="menu-button">Albums</button>
+                <button class="menu-button">Podcasts</button>
+            </div>
+            <input type="text" class="search" placeholder="Search">
+            
+            <div class="library-list">
+                <div class="library-item" onclick="showLikedSongs()">
+                    <div class="icon liked-songs"></div>
+                    <div class="text">
+                        <p>Liked Songs</p>
+                        <span>Playlist • 4 songs</span>
+                    </div>
+                </div>
+
+
+                
+                <div class="library-item">
+                    <div class="icon episodes"></div>
+                    <div class="text">
+                        <p>Your Episodes</p>
+                        <span>Saved & downloaded episodes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="output-section" id="outputSection">
+            <iframe src="myprofile.html" id="outputIframe" frameborder="0" style="width:100%; height:100%;"></iframe>
+        </div>
+
+
+        <div class="liked-songs-list" id="likedSongsList">
+            <h3>Liked Songs</h3>
+            <ul>
+                <li>
+                    <img src="song1.jpg" alt="Album Cover 1" class="album-cover">
+                    <div class="song-info">
+                        <p>Every Summertime - NIKI</p>
+                        <span>Single</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="song2.jpg" alt="Album Cover 2" class="album-cover">
+                    <div class="song-info">
+                        <p>Timeless - The Weeknd, Playboi Carti</p>
+                        <span>Single</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="song3.jpg" alt="Album Cover 3" class="album-cover">
+                    <div class="song-info">
+                        <p>Mafia - Travis Scott</p>
+                        <span>Single</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="song4.jpg" alt="Album Cover 4" class="album-cover">
+                    <div class="song-info">
+                        <p>Flaming Hot Cheetos - Clairo</p>
+                        <span>Single</span>
+                    </div>
+                </li>
+
+            </ul>
+            <button onclick="hideLikedSongs()">Back</button>
+        </div>
+        <div class="artists-list" id="artistsList" style="display: none;">
+            <h1>Artists</h1>
+            <ul>
+                <li>
+                    <img src="artist-photo1.jpg" alt="Artist Photo 1" class="artist-photo">
+                    <div class="artist-info">
+                        <p>The Weeknd</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="artist-photo2.jpg" alt="Artist Photo 2" class="artist-photo">
+                    <div class="artist-info">
+                        <p>Travis Scott</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="artist-photo3.jpg" alt="Artist Photo 3" class="artist-photo">
+                    <div class="artist-info">
+                        <p>Harry Styles</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="artist-photo4.jpg" alt="Artist Photo 4" class="artist-photo">
+                    <div class="artist-info">
+                        <p>Lana Del Rey</p>
+                    </div>
+                </li>
+
+            </ul>
+            <button onclick="hideArtists()">Back</button>
+        </div>
+    
+    </div>
+
+
+    
+    <script src="library_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    padding: 20px;
+}
+
+.library-section, .output-section, .liked-songs-list {
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.library-section {
+    width: 240px;
+    margin-right: 20px;
+    
+}
+
+.library-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0; /* Adjusts spacing between items */
+    border: 1px solid white; /* Adds the white border */
+    border-radius: 8px; /* Optional: Rounds the corners */
+    color: white; /* Ensures text color is white */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Adds smooth hover effect */
+}
+
+.library-item:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly darkens background on hover */
+    transform: scale(1.02); /* Optional: Slight zoom on hover */
+}
+
+
+.library-menu .menu-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 12px;
+    margin: 5px;
+    border: 1px solid white; /* White border */
+    border-radius: 8px; /* Rounded corners */
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    text-align: center;
+}
+
+.library-menu .menu-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.02);
+}
+
+.search {
+    width: 100%;
+    padding: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+.library-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.library-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background 0.2s ease;
+}
+
+.library-item:hover {
+    background-color: #333;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    background-color: #1ed760;
+    border-radius: 4px;
+}
+
+.liked-songs {
+    background-image: url('likedsong_icon.png');
+    background-size: cover;
+}
+
+.episodes {
+    background-image: url('episodes_icon.png');
+    background-size: cover;
+}
+
+.text p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.text span {
+    font-size: 12px;
+    color: #b3b3b3;
+}
+
+.output-section {
+    flex: 1;
+    background-color: #121212;
+    display: block;
+    overflow: hidden;
+}
+.output-section iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.liked-songs-list {
+    display: none; /* Hide by default */
+    flex: 1;
+    background-color: #121212;
+}
+
+.liked-songs-list h3 {
+    margin-bottom: 10px;
+}
+
+.liked-songs-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.liked-songs-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+}
+
+.album-cover {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    border-radius: 4px;
+    margin-right: 15px; /* Space between cover and song info */
+}
+
+.song-info p {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.song-info span {
+    font-size: 12px;
+    color: #b3b3b3;
+}
+
+.liked-songs-list button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1ed760;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.liked-songs-list button:hover {
+    background-color: #1db954;
+}
+
+.artists-list ul {
+    list-style-type: none;
+    padding: 40px;
+}
+
+.artists-list li {
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: 1px solid #333;
+}
+
+.artist-photo {
+    width: 85px; /* Adjust size as needed */
+    height: 85px;
+    border-radius: 50%; /* Make photos circular */
+    margin-right: 20px;
+}
+
+.artist-info p {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+.artists-list button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1ed760;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.artists-list button:hover {
+    background-color: #1db954;
+}
